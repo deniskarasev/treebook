@@ -5,6 +5,7 @@
 <%= link_to "Post a New Status", new_status_path, class: "btn btn-success" %>
 
 <% @statuses.each do |status| %>
+
 <div class="status">
     <strong><%= status.name %> </strong>
     <p><%= status.content %></p>
@@ -15,6 +16,6 @@
             <%= link_to "Delete", status, method: :delete, data: { confirm: "Are you sure your want to delete this status?" } %>
           </span>
     </div>
-
 </div>
+
 <% end %>
